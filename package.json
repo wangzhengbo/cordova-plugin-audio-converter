@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-audio-converter",
+  "version": "0.1.0",
+  "description": "Cordova plugin for audio conversion",
+  "cordova": {
+    "id": "cordova-plugin-audio-converter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangzhengbo/cordova-plugin-audio-converter.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "audio",
+    "converter",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Wang Zhengbo",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/wangzhengbo/cordova-plugin-audio-converter/issues"
+  },
+  "homepage": "https://github.com/wangzhengbo/cordova-plugin-audio-converter#readme"
+}
