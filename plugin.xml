@@ -15,6 +15,8 @@
   </js-module>
 
   <platform name="android">
+    <hook type="before_compile" src="scripts/androidBeforeInstall.js" />
+
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AudioConverter">
         <param name="android-package" value="com.audio.converter.AudioConverter" />
@@ -26,6 +28,9 @@
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
 
-    <source-file src="src/android/AudioConverter.java" target-dir="src/com/converter/converter/" />
+    <source-file src="src/android/App.java" target-dir="src/com/audio/converter/" />
+    <source-file src="src/android/AudioConverter.java" target-dir="src/com/audio/converter/" />
   </platform>
+  
+  <framework src="com.github.adrielcafe:AndroidAudioConverter:0.3.0" />
 </plugin>
