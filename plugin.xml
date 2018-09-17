@@ -32,5 +32,5 @@
     <source-file src="src/android/AudioConverter.java" target-dir="src/com/audio/converter/" />
   </platform>
   
-  <framework src="com.github.adrielcafe:AndroidAudioConverter:0.3.0" />
+  <framework src="com.github.adrielcafe:AndroidAudioConverter:0.0.8" />
 </plugin>
