@@ -15,7 +15,7 @@
   </js-module>
 
   <platform name="android">
-    <hook type="before_compile" src="scripts/androidBeforeInstall.js" />
+    <hook type="before_compile" src="scripts/androidBeforeCompile.js" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AudioConverter">

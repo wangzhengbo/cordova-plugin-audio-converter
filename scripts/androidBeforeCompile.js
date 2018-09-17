@@ -6,7 +6,7 @@ module.exports = function(ctx) {
 
   var manifestPath = path.join(
     ctx.opts.projectRoot,
-    'platforms/android/AndroidManifest.xml'
+    'platforms/android/app/src/main/AndroidManifest.xml'
   )
   var doc = xml.parseElementtreeSync(manifestPath);
   if (doc.getroot().tag !== 'manifest') {
