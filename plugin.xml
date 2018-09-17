@@ -30,8 +30,8 @@
 
     <source-file src="src/android/App.java" target-dir="src/com/audio/converter/" />
     <source-file src="src/android/AudioConverter.java" target-dir="src/com/audio/converter/" />
-    <source-file src="build-extras.gradle" target-dir="src/../" />
-  
+
+    <framework src="build-extras.gradle" custom="true" type="gradleReference" /> 
     <framework src="com.github.adrielcafe:AndroidAudioConverter:0.0.8" />
   </platform>
 </plugin>
