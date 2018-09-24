@@ -15,8 +15,6 @@
   </js-module>
 
   <platform name="android">
-    <hook type="before_compile" src="scripts/androidBeforeCompile.js" />
-
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AudioConverter">
         <param name="android-package" value="com.audio.converter.AudioConverter" />
@@ -28,10 +26,12 @@
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
 
-    <source-file src="src/android/App.java" target-dir="src/com/audio/converter/" />
+    <source-file src="src/android/AndroidAudioConverter.java" target-dir="src/com/audio/converter/" />
     <source-file src="src/android/AudioConverter.java" target-dir="src/com/audio/converter/" />
+    <source-file src="src/android/ConvertCallback.java" target-dir="src/com/audio/converter/" />
+    <source-file src="src/android/Encoder.java" target-dir="src/com/audio/converter/" />
+    <source-file src="src/android/LoadCallback.java" target-dir="src/com/audio/converter/" />
 
-    <framework src="build-extras.gradle" custom="true" type="gradleReference" /> 
-    <framework src="com.github.adrielcafe:AndroidAudioConverter:0.0.8" />
+    <framework src="nl.bravobit:android-ffmpeg:1.1.5" />
   </platform>
 </plugin>
